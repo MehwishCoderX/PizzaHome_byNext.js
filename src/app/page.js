@@ -377,5 +377,12 @@ const pizzas = [
 ];
 
 export default function Home() {
-  return <section>home</section>;
+  return <section>
+
+    <div>
+      {pizzas.map((pizza)=>{
+        return <Pizza pizza={pizza}> </Pizza>;
+      })}
+    </div>
+  </section>;
 }
